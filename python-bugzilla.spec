@@ -6,6 +6,7 @@ License:	MIT
 Group:		Libraries/Python
 Source0:	http://wwoods.fedorapeople.org/python-bugzilla/tarballs/%{name}-%{version}.tar.gz
 # Source0-md5:	5253b8ba6bcc819def1184012e0f422a
+Patch0:		%{name}-pld.patch
 URL:		http://wwoods.fedorapeople.org/python-bugzilla/
 BuildRequires:	python-devel >= 1:2.3.0
 BuildRequires:	rpmbuild(macros) >= 1.219
@@ -18,6 +19,7 @@ A Bugzilla library for Python.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 python setup.py build
