@@ -1,0 +1,11 @@
+--- python-bugzilla-0.2/bugzilla~	2007-10-02 20:12:14.000000000 +0200
++++ python-bugzilla-0.2/bugzilla	2008-02-13 22:54:48.546899921 +0100
+@@ -15,7 +15,7 @@
+ import logging
+ 
+ version = '0.1'
+-default_bz = 'https://bugzilla.redhat.com/xmlrpc.cgi'
++default_bz = 'https://bugs.pld-linux.org/xmlrpc.cgi'
+ 
+ # Initial simple logging stuff
+ logging.basicConfig()
