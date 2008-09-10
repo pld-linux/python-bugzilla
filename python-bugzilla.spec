@@ -4,10 +4,10 @@ Version:	0.2
 Release:	1
 License:	MIT
 Group:		Libraries/Python
-Source0:	http://wwoods.fedorapeople.org/python-bugzilla/tarballs/%{name}-%{version}.tar.gz
+Source0:	https://fedorahosted.org/releases/p/y/python-bugzilla/%{name}-%{version}.tar.gz
 # Source0-md5:	5253b8ba6bcc819def1184012e0f422a
 Patch0:		%{name}-pld.patch
-URL:		http://wwoods.fedorapeople.org/python-bugzilla/
+URL:		https://fedorahosted.org/python-bugzilla/
 BuildRequires:	python-devel >= 1:2.3.0
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
