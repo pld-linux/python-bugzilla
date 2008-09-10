@@ -1,4 +1,5 @@
 Summary:	A Bugzilla library for Python
+Summary(pl.UTF-8):	Biblioteka Bugzilli dla Pythona
 Name:		python-bugzilla
 Version:	0.2
 Release:	1
@@ -9,6 +10,7 @@ Source0:	https://fedorahosted.org/releases/p/y/python-bugzilla/%{name}-%{version
 Patch0:		%{name}-pld.patch
 URL:		https://fedorahosted.org/python-bugzilla/
 BuildRequires:	python-devel >= 1:2.3.0
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
 BuildArch:	noarch
@@ -17,17 +19,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Bugzilla library for Python.
 
+%description -l pl.UTF-8
+Biblioteka Bugzilli dla Pythona.
+
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%{__python} setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT
 
