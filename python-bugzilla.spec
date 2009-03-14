@@ -1,12 +1,12 @@
 Summary:	A Bugzilla library for Python
 Summary(pl.UTF-8):	Biblioteka Bugzilli dla Pythona
 Name:		python-bugzilla
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://fedorahosted.org/releases/p/y/python-bugzilla/%{name}-%{version}.tar.gz
-# Source0-md5:	5253b8ba6bcc819def1184012e0f422a
+# Source0-md5:	c01c9b489220b4fd853a3f6f8df20b01
 Patch0:		%{name}-pld.patch
 URL:		https://fedorahosted.org/python-bugzilla/
 BuildRequires:	python-devel >= 1:2.3.0
