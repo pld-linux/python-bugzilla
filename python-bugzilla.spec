@@ -24,7 +24,7 @@ Biblioteka Bugzilli dla Pythona.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %py_build
